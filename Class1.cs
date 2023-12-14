@@ -11,7 +11,7 @@ namespace WinFormsApp12
         public List<string> List { get; set; }
         public string Nome { get; set; }
         public string email { get; set; }
-         
+        //asdfghjk
 
     }
 }
