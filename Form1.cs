@@ -38,7 +38,7 @@ namespace WinFormsApp12
                 MessageBox.Show("saved with success");
             }
 
-            
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -51,6 +51,28 @@ namespace WinFormsApp12
             {
                 textBox3.UseSystemPasswordChar = false;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            closefrms.closefrm();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            frm2.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
