@@ -15,31 +15,24 @@ namespace WinFormsApp12
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "") 
             {
-                MessageBox.Show("Por favor, preencha o campo 'Nome'.", "Campo em Falta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBox1.Focus();
-            }
-            else if (string.IsNullOrWhiteSpace(textBox3.Text))
-            {
-                MessageBox.Show("Por favor, preencha o campo 'Senha'.", "Campo em Falta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBox3.Focus();
-            }
-            else if (string.IsNullOrWhiteSpace(textBox2.Text))
-            {
-                MessageBox.Show("Por favor, preencha o campo 'Email'.", "Campo em Falta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBox2.Focus();
+                MessageBox.Show("falta informações");
             }
             else
             {
-                Class1 instancia = new Class1();
-                instancia.Nome = textBox1.Text;
+                Class1.Nome = textBox1.Text;
+                Class1.Email = textBox2.Text;
+                Class1.Password = textBox3.Text;
 
-                MessageBox.Show("saved with success");
+                MessageBox.Show("Foi guardado com êxito");
+
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
             }
-
-
         }
+    
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {

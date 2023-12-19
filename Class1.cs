@@ -8,10 +8,27 @@ namespace WinFormsApp12
 {
     internal class Class1
     {
-        public List<string> List { get; set; }
-        public string Nome { get; set; }
-        public string email { get; set; }
-        //asdfghjk
+       public static string Nome;
+       public static string Email;
+       public static string Password;
+
+        public Class1 (string nome, string email, string password)
+        {
+            Nome = nome;
+            Email = email;
+            Password = password;
+            List<Class1> numeros = new List<Class1>();
+
+
+        }
+      
+
+
+       
+
+    
+
 
     }
+
 }

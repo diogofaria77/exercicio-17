@@ -15,6 +15,7 @@ namespace WinFormsApp12
         public Form2()
         {
             InitializeComponent();
+            foreach (Class1 numero in Class1)
         }
 
         private void button2_Click(object sender, EventArgs e)
