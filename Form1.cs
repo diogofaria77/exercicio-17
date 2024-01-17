@@ -21,9 +21,9 @@ namespace WinFormsApp12
             }
             else
             {
-                Class1.Nome = textBox1.Text;
-                Class1.Email = textBox2.Text;
-                Class1.Password = textBox3.Text;
+                string nome = textBox1.Text;
+                string email = textBox2.Text;
+                string password = textBox3.Text;
 
                 MessageBox.Show("Foi guardado com êxito");
 

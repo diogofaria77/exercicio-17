@@ -15,7 +15,6 @@ namespace WinFormsApp12
         public Form2()
         {
             InitializeComponent();
-            foreach (Class1 numero in Class1)
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -25,14 +24,22 @@ namespace WinFormsApp12
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 frm1 = new Form1();
-            frm1.Show();
-            this.Hide();
+            foreach (Class1 utilizador in Class1.listusers)
+            {
+                Listusers.Items.Add(utilizador.Nome);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void UserList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+        
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            UserList = new ListBox();
+            Listusers = new ListBox();
             button2 = new Button();
             SuspendLayout();
             // 
@@ -43,15 +43,16 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // UserList
+            // Listusers
             // 
-            UserList.BackColor = SystemColors.InactiveCaption;
-            UserList.FormattingEnabled = true;
-            UserList.ItemHeight = 15;
-            UserList.Location = new Point(12, 29);
-            UserList.Name = "UserList";
-            UserList.Size = new Size(120, 274);
-            UserList.TabIndex = 1;
+            Listusers.BackColor = SystemColors.InactiveCaption;
+            Listusers.FormattingEnabled = true;
+            Listusers.ItemHeight = 15;
+            Listusers.Location = new Point(12, 29);
+            Listusers.Name = "Listusers";
+            Listusers.Size = new Size(120, 274);
+            Listusers.TabIndex = 1;
+            Listusers.SelectedIndexChanged += UserList_SelectedIndexChanged;
             // 
             // button2
             // 
@@ -69,7 +70,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
-            Controls.Add(UserList);
+            Controls.Add(Listusers);
             Controls.Add(button1);
             Name = "Form2";
             Text = "Form2";
@@ -79,7 +80,7 @@
         #endregion
 
         private Button button1;
-        private ListBox UserList;
+        private ListBox Listusers;
         private Button button2;
     }
 }
